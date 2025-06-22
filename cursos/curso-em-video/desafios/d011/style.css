@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("img/espaco.jpg");
+    background-size: cover;
+}
+
+div {
+    height: 98vh;
+    background-image: url("img/astronauta.png");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center center;
+}
+
+@keyframes it {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0px);}
+}
+
+div {
+    animation: it 5s ease-in-out infinite;
+    max-width: 100%;
+}
+
+@media (max-width: 780px) {
+    div {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    div {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 320px) {
+    div {
+        max-width: 40%;
+    }
+}
